@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import java.net.URL?>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="400.0" spacing="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jfxdays.testing.artshopapp.LandingPageController">
+    <stylesheets>
+        <URL value="@default.css"/>
+    </stylesheets>
+   <children>
+      <HBox maxHeight="100.0" spacing="10" alignment="CENTER">
+          <padding><Insets bottom="5" left="5" right="5" top="5" /></padding>
+         <children>
+             <Label text="Search:" />
+            <TextField fx:id="tfSearch"/>
+            <Button onAction="#doReset" text="Reset" />
+         </children></HBox>
+       <HBox prefHeight="100.0" prefWidth="400.0" spacing="5">
+           <padding><Insets bottom="5" left="5" right="5" top="5" /></padding>
+           <Label text="Count:" />
+           <Label fx:id="labelCount"/>
+       </HBox>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="1000.0" prefWidth="400.0" style="-fx-background-color:transparent;" vbarPolicy="ALWAYS" fx:id="scrollPane">
+        <content>
+            <TableView prefHeight="1000.0" prefWidth="400.0" fx:id="imagesTable" >
+                <columns>
+                    <TableColumn prefWidth="100.0" text="preview" sortable="false">
+                    </TableColumn>
+                    <TableColumn minWidth="0.0" text="name">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="name"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn minWidth="0.0" prefWidth="60.0"  text="info">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="info"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </content>
+      </ScrollPane>
+   </children>
+    <padding><Insets bottom="0" left="0" right="0" top="5" /></padding>
+</VBox>
