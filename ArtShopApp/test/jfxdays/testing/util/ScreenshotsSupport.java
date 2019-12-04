@@ -90,7 +90,7 @@ public class ScreenshotsSupport {
         System.out.printf("Distance: " + dist);
         if (dist <= threshold) {
             saveScreenshot(image, name);
-            Assert.fail( "The two snapshots differ too much. Distance: " + dist);
+            Assert.fail( "The two snapshots are too similar. Distance: " + dist);
         }
     }
 }
