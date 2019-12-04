@@ -47,7 +47,7 @@ public class ScreenshotsSupport {
                                 argb1 >>= 8;
                                 argb2 >>= 8;
                             }
-                            System.out.println(Math.sqrt(res));
+//                            System.out.println(Math.sqrt(res));
                             return Math.sqrt(res);
                         }
                     }).sum();
@@ -72,6 +72,7 @@ public class ScreenshotsSupport {
             Assert.fail( "Golden image doesn't exist for " + name);
         }
         double dist = screenshotDistance(golden, getImage(nodeUnderTest));
+        System.out.printf("Distance: " + dist);
         if (dist > threshold) {
             saveScreenshot(image, name);
             Assert.fail( "The two snapshots differ with distance " + dist);

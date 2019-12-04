@@ -61,6 +61,10 @@ public class LandingPageController {
         columnPreview.setCellFactory(param -> new TableCell<>() {
             public void updateItem(String image, boolean empty) {
                 super.updateItem(image, empty);
+
+                new Thread(()-> {
+
+                }).start();
                 final ImageView imageview = new ImageView();
                 imageview.setFitHeight(PREVIEW_SIZE);
                 imageview.setFitWidth(PREVIEW_SIZE);

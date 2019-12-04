@@ -50,8 +50,8 @@ public class ScreenshotTest extends ApplicationTest {
         Label node = lookup("#labelCount").query();
 
         // TASK: setup golden folder
-        // TASK: test image in the table instead
-        ScreenshotsSupport.assertSnapshotsEqual("testBlue", node, 0.05);
+        // TASK: test images in the table instead
+        ScreenshotsSupport.assertSnapshotsEqual("testBlue", node, 0.01);
     }
 
     @After
