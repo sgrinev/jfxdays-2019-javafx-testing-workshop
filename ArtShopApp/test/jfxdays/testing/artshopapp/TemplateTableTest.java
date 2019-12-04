@@ -31,6 +31,13 @@ public class TemplateTableTest extends ApplicationTest {
         stage.show();
     }
 
+    public String name;
+    public String info;
+
+    
+
+    public TemplateTableTest(String name, String info)
+
     @Parameterized.Parameters
     public static Collection values() {
         return Arrays.asList(new Object[][]{
