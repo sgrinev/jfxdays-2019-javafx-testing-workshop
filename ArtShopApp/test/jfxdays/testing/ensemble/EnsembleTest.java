@@ -14,8 +14,7 @@ public class EnsembleTest extends FxRobot {
     }
     @Test
     public void testSearchBox() {
-        clickOn(".search-box");
-        write("chart");
+        clickOn(".pagination");
     }
 
 

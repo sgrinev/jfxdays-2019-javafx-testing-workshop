@@ -54,6 +54,18 @@ public class ScreenshotTest extends ApplicationTest {
         ScreenshotsSupport.assertSnapshotsEqual("testBlue", node, 0.01);
     }
 
+    @Test
+    public void testNotBlue() throws IOException {
+        clickOn("#tfSearch");
+        write("tort");
+
+        Label node = lookup("#labelCount").query();
+
+        // TASK: setup golden folder
+        // TASK: test images in the table instead
+        ScreenshotsSupport.assertSnapshotsNotEqual("testBlue", node, 0.01);
+    }
+
     @After
     public void tearDown () throws Exception {
         FxToolkit.cleanupStages();

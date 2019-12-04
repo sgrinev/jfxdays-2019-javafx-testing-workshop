@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="org.testfx:testfx-junit:4.0.15-alpha" level="project" />
+    <orderEntry type="library" name="Ensemble8" level="project" />
   </component>
 </module>

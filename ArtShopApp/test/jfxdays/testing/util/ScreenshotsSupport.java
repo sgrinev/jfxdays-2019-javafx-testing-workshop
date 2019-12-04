@@ -78,4 +78,19 @@ public class ScreenshotsSupport {
             Assert.fail( "The two snapshots differ with distance " + dist);
         }
     }
+
+    public static void assertSnapshotsNotEqual(final String name, final Node nodeUnderTest, final double threshold) throws IOException {
+        final WritableImage image = getImage(nodeUnderTest);
+        final Image golden = new Image("file:golden/" + name + ".png");
+        if (golden.isError()) {
+            saveScreenshot(image, name);
+            Assert.fail( "Golden image doesn't exist for " + name);
+        }
+        double dist = screenshotDistance(golden, getImage(nodeUnderTest));
+        System.out.printf("Distance: " + dist);
+        if (dist <= threshold) {
+            saveScreenshot(image, name);
+            Assert.fail( "The two snapshots differ too much. Distance: " + dist);
+        }
+    }
 }
