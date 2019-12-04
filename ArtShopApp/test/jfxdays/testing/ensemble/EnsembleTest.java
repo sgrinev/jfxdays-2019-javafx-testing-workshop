@@ -20,6 +20,9 @@ public class EnsembleTest extends FxRobot {
     public void testChart() throws IOException {
         clickOn(".pagination");
         Node chart = lookup(".chart-plot-background").query();
+
+        Node slider = lookup( ".slider").query();
+        System.out.println(slider);
         ScreenshotsSupport.assertSnapshotsNotEqual("chart", chart, 0.01);
     }
 
