@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="org.testfx:openjfx-monocle:jdk-11+26" type="repository">
+    <properties maven-id="org.testfx:openjfx-monocle:jdk-11+26" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/testfx/openjfx-monocle/jdk-11+26/openjfx-monocle-jdk-11+26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/11-ea+25/javafx-base-11-ea+25-win.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/11-ea+25/javafx-base-11-ea+25-mac.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/11-ea+25/javafx-controls-11-ea+25-win.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/11-ea+25/javafx-controls-11-ea+25-mac.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/11-ea+25/javafx-graphics-11-ea+25.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/11-ea+25/javafx-graphics-11-ea+25-win.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/11-ea+25/javafx-graphics-11-ea+25-mac.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/11-ea+25/javafx-base-11-ea+25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
